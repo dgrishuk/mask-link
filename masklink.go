@@ -7,9 +7,9 @@ import (
 
 func MaskLink(message string) string {
 	prefixes := []byte("http")
-	sourceStr := "Here's my spammy page: http://hehefouls.netHAHAHA see you."
+	sourceStr := message
 	arrWords := strings.Split(sourceStr, " ")
-	var resultStr string
+	resultStr := message
 
 	for _, word := range arrWords {
 		var maskWord string
